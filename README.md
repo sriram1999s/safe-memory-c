@@ -20,7 +20,7 @@ hijack.sh hijack_client
 ```
 ```hijack.out``` is produced
 
-## Normal Usage :
+## Normal Usage
 
 ### Interfaces Provided :
 
