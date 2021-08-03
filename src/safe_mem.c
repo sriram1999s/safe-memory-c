@@ -9,9 +9,14 @@ int _ix = 0;
 void _disp_store();
 
 void* smalloc(int size) {
-  void* temp = malloc(size);
-  _store[_ix] = temp;
-  ++_ix;
+  void *temp;
+  if(_ix < MAX_LOC) {
+    temp = malloc(size);
+    _store[_ix] = temp;
+    ++_ix;
+  } else {
+    printf("Maximum location limit reached!!");
+  }
   return temp;
 }
 
