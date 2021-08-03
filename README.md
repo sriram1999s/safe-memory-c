@@ -4,6 +4,10 @@ Safe allocation and deallocation of memory in C
 
 > The maximum number of locations kept track of can be modified by changing ```MAX_LOC```in ```safe_mem.c```
 
+## Functionalities
+- [hijacking](#Hijacking)
+- [direct usage](#Normal-Usage)
+
 ## Hijacking
 
 A shell script ```hijack.sh``` is provided.
