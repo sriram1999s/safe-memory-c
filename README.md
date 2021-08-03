@@ -1,14 +1,27 @@
 # safe-memory-c
 Safe allocation and deallocation of memory in C
 
-## Interfaces Provided :
-
-- smalloc
-- sfree
 
 > The maximum number of locations kept track of can be modified by changing ```MAX_LOC```in ```safe_mem.c```
 
-## Usage :
+## Hijacking
+
+A shell script ```hijack.sh``` is provided.
+
+Make sure to have the ```safe_mem.c``` file in the working directory.
+
+Assuming the client file is ```hijack_client.c```, run :
+```shell
+hijack.sh hijack_client
+```
+```hijack.out``` is produced
+
+## Normal Usage :
+
+### Interfaces Provided :
+
+- smalloc
+- sfree
 
 Sample client ( ```client.c``` )
 
@@ -34,7 +47,7 @@ int main() {
 }
 ```
 
-## Compilation & Running :
+### Compilation & Running :
 
 ```sh
 gcc client.c safe_mem.c
